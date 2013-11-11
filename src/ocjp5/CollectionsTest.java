@@ -3,6 +3,7 @@ package ocjp5;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 public class CollectionsTest {
 
@@ -19,6 +20,7 @@ public class CollectionsTest {
 		//Collections.sort(arrayList);
 		//int result=Collections.binarySearch(arrayList, "6");//杩斿洖5
 		System.out.println(result);
+		List<Integer> list;//list<int>是编译不通过的
 	}
 
 }
