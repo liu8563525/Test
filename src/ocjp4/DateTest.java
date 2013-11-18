@@ -24,17 +24,17 @@ public class DateTest {
 		System.out.println(locale.getDisplayCountry()+""+string);
 		System.out.printf("%b", -5);
 		System.out.printf("%d", Math.PI);
-		LinkedList<?> list=new LinkedList<?>();//错误的定义
-		list.toArray();//返回Object[]
-		addString(list);
-		List list2=new ArrayList();//定义集合变量需加上泛型，否则出现警告
+		//LinkedList<?> list=new LinkedList<?>();//閿欒鐨勫畾涔�
+		//list.toArray();//杩斿洖Object[]
+		//addString(list);
+		List list2=new ArrayList();//瀹氫箟闆嗗悎鍙橀噺闇�姞涓婃硾鍨嬶紝鍚﹀垯鍑虹幇璀﹀憡
 		//Collections.reverseOrder(Comparator<T> cmp)
 		int[] myArray=new int[5];
 		Arrays.asList(myArray);//asList(T... a)
 		Collections.sort(list2);
-		Collections.binarySearch(list2, "a");//二分法排序前必须先sort方法升序排序
+		Collections.binarySearch(list2, "a");//浜屽垎娉曟帓搴忓墠蹇呴』鍏坰ort鏂规硶鍗囧簭鎺掑簭
 	}
-	
+
 	private static void addString(List<? super String> list){
 		list.add("abc");
 	}
