@@ -23,11 +23,15 @@ public class HashMapTest {
 			System.out.println(entry);
 		}
 		System.out.println(a.hashCode());
+		System.out.println(a.getVersion());
+		long version=a.getVersion().longValue()+1;
+		System.out.println(version);
 	}
 
 }
 class A{
 	private String name="a";
+	private Number version=null;
 	public A(){
 	}
 	public A(String nameString){
@@ -35,6 +39,9 @@ class A{
 	}
 	public String getName(){
 		return this.name;
+	}
+	public Number getVersion(){
+		return this.version;
 	}
 }
 class B{
